@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Event Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Event Management System</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li id="myRegistrationsNav" style="display:none;"><a href="my-registrations.html">My Registrations</a></li>
+        <li id="authNavItem"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <h1>Upcoming Events</h1>
+      <p>Browse all events below, or use search and filter to find what you need.</p>
+    </section>
+
+    <!-- Search and Filter Controls -->
+    <section class="search-filter-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search events by name..."
+      >
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Hackathon">Hackathon</option>
+        <option value="Career">Career</option>
+      </select>
+    </section>
+
+    <!-- Events will be inserted here by JavaScript -->
+    <section id="eventsContainer" class="events-grid">
+      <!-- Event cards are generated dynamically in js/app.js -->
+    </section>
+
+    <p id="noResults" class="no-results" style="display:none;">
+      No events match your search.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Event Management System | Student Project | Hosted on Amazon S3</p>
+  </footer>
+
+  <script src="js/events.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

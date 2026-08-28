@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Registrations - Event Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Event Management System</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li id="myRegistrationsNav" style="display:none;"><a href="my-registrations.html" class="active">My Registrations</a></li>
+        <li id="authNavItem"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <h1>My Registrations</h1>
+      <p>Events you have registered for using this account, on this browser.</p>
+    </section>
+
+    <!-- Shown instead of the list if the visitor is not logged in -->
+    <section id="myRegLoginPrompt" class="form-card" style="display:none; text-align:center;">
+      <p>You need to be logged in to view your registrations.</p>
+      <a href="login.html" class="btn btn-primary">Login / Create Account</a>
+    </section>
+
+    <!-- Filled in dynamically by js/app.js -->
+    <section id="myRegistrationsContainer" class="events-grid">
+      <p>Loading your registrations...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Event Management System | Student Project | Hosted on Amazon S3</p>
+  </footer>
+
+  <script src="js/events.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

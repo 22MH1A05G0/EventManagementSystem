@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Event Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Event Management System</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li id="myRegistrationsNav" style="display:none;"><a href="my-registrations.html">My Registrations</a></li>
+        <li id="authNavItem"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <h1>Event Registration</h1>
+      <p>Fill in your details below to register for an event.</p>
+    </section>
+
+    <!-- Shown instead of the form if the visitor is not logged in -->
+    <section id="loginPrompt" class="form-card" style="display:none; text-align:center;">
+      <p>You need to be logged in to register for an event.</p>
+      <a href="login.html" class="btn btn-primary">Login / Create Account</a>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="form-card">
+      <form id="registrationForm" novalidate>
+
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+        <span class="error-message" id="nameError"></span>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email address">
+        <span class="error-message" id="emailError"></span>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your 10-digit phone number">
+        <span class="error-message" id="phoneError"></span>
+
+        <label for="eventSelect">Select Event</label>
+        <select id="eventSelect" name="eventSelect">
+          <option value="">-- Choose an event --</option>
+          <!-- Options are filled in dynamically by js/app.js -->
+        </select>
+        <span class="error-message" id="eventError"></span>
+
+        <button type="submit" class="btn btn-primary">Submit Registration</button>
+      </form>
+
+      <!-- Confirmation message shown after successful submission -->
+      <div id="confirmationMessage" class="confirmation-box" style="display:none;">
+        <h2>Registration Successful!</h2>
+        <p id="confirmationText"></p>
+        <a href="events.html" class="btn btn-secondary">Back to Events</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Event Management System | Student Project | Hosted on Amazon S3</p>
+  </footer>
+
+  <script src="js/events.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

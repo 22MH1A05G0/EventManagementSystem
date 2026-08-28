@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Event Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Event Management System</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li id="myRegistrationsNav" style="display:none;"><a href="my-registrations.html">My Registrations</a></li>
+        <li id="authNavItem"><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <h1>Login</h1>
+      <p>Log in to register for events, or create a new account below.</p>
+    </section>
+
+    <!-- LOGIN FORM -->
+    <section class="form-card" id="loginForm-wrapper">
+      <form id="loginForm" novalidate>
+        <label for="loginEmail">Email</label>
+        <input type="text" id="loginEmail" placeholder="Enter your email">
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password">
+
+        <span class="error-message" id="loginError"></span>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <p class="switch-text">
+        Don't have an account? <a href="#" id="showSignupLink">Create one</a>
+      </p>
+    </section>
+
+    <!-- SIGN UP FORM (hidden until "Create one" is clicked) -->
+    <section class="form-card" id="signupForm-wrapper" style="display:none;">
+      <form id="signupForm" novalidate>
+        <label for="signupName">Full Name</label>
+        <input type="text" id="signupName" placeholder="Enter your full name">
+
+        <label for="signupEmail">Email</label>
+        <input type="text" id="signupEmail" placeholder="Enter your email">
+
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="At least 4 characters">
+
+        <span class="error-message" id="signupError"></span>
+
+        <button type="submit" class="btn btn-primary">Create Account</button>
+      </form>
+      <p class="switch-text">
+        Already have an account? <a href="#" id="showLoginLink">Login</a>
+      </p>
+    </section>
+
+    <p class="note-text">
+      Note: This is a simple demo login for a static, frontend-only project.
+      Accounts are stored in your browser only (not on a real server), so
+      they won't be available on a different browser or device.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Event Management System | Student Project | Hosted on Amazon S3</p>
+  </footer>
+
+  <script src="js/events.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

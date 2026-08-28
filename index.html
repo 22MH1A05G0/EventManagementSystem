@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Event Management System</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li id="myRegistrationsNav" style="display:none;"><a href="my-registrations.html">My Registrations</a></li>
+        <li id="authNavItem"><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Intro Section -->
+  <main>
+    <section class="hero">
+      <img src="images/hero.svg" alt="Event Management System banner" class="hero-image">
+      <h1>Welcome to the Event Management System</h1>
+      <p>
+        This is a simple web application where students and professionals can
+        browse upcoming technical events, view event details, and register
+        online. Built using only HTML, CSS and JavaScript, and hosted as a
+        static website on Amazon S3.
+      </p>
+      <a href="events.html" class="btn btn-primary">View Available Events</a>
+    </section>
+
+    <!-- A few highlights, purely informational -->
+    <section class="highlights">
+      <div class="highlight-card">
+        <h3>Browse Events</h3>
+        <p>Explore workshops, seminars and hackathons happening soon.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Check Details</h3>
+        <p>View date, time, location, organizer and seat availability.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Register Instantly</h3>
+        <p>Fill a simple form to reserve your seat for any event.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Event Management System | Student Project | Hosted on Amazon S3</p>
+  </footer>
+
+  <script src="js/events.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -23,7 +23,7 @@ const events = [
     description: "A hands-on workshop covering programming fundamentals and problem solving.",
     organizer: "Computer Science Department",
     seats: 40,
-    image: "images/workshop.svg"
+    image: "images/workshop.jpg"
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const events = [
     description: "Learn the basics of HTML, CSS and JavaScript from industry speakers.",
     organizer: "IT Club",
     seats: 60,
-    image: "images/seminar.svg"
+    image: "images/seminar.jpg"
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const events = [
     description: "An introductory session on cloud concepts, including AWS S3 static hosting.",
     organizer: "Cloud Computing Club",
     seats: 35,
-    image: "images/workshop.svg"
+    image: "images/workshop.jpg"
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const events = [
     description: "A 12-hour hackathon where teams build small projects and present them for judging.",
     organizer: "Developer Student Club",
     seats: 80,
-    image: "images/hackathon.svg"
+    image: "images/hackathon.jpg"
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ const events = [
     description: "Guidance on resume building, interviews, and career planning for students.",
     organizer: "Training & Placement Cell",
     seats: 100,
-    image: "images/career.svg"
+    image: "images/career.jpg"
   },
   {
     id: 6,
@@ -83,6 +83,6 @@ const events = [
     description: "An overview talk on AI and machine learning concepts and real-world applications.",
     organizer: "AI Research Club",
     seats: 70,
-    image: "images/seminar.svg"
+    image: "images/hero.jpg"
   }
 ];
